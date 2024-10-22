@@ -20,6 +20,32 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 
-console.log(personalMovieDB)
+console.log(personalMovieDB);
 
+
+
+if (num < 49) {
+    console.log('Брехня')
+} else if (num > 100) {
+    console.log('Забагато!')
+} else if (num === 50) {
+    console.log('Перемога!')
+}
+
+const num = 50;
+
+switch (num = 50) {
+    case 49:
+        console.log('не вірно');
+        break;
+    case 100:
+        console.log('Забагато!');
+        break;
+    case 51:
+        console.log('Все правильно!');
+        break;
+    default:
+        console.log('Не в цей раз!');
+        break;
+}
 
