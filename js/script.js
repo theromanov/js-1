@@ -1,50 +1,40 @@
 "use strict";
 
-// const numberOfFilms = +prompt('Скільки ви переглянли фільмів?');
+const numberOfFilms = prompt('Скільки ви переглянли фільмів?');
 
-// const personalMovieDB = {
-//     count: numberOfFilms,
-//     movies: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
-// };
-
-
-// const a = prompt('Один з останніх переглянутих фільмів?'),
-//     b = +prompt('На скільки оцінити його?'),
-//     c = prompt('Один з останніх переглянутих фільмів?'),
-//     d = +prompt('На скільки оцінити його?');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
 
-// console.log(personalMovieDB);
+for (let i = 0; i < 1; i++) {
+    const a = prompt('Один з останніх переглянутих фільмів?'),
+        b = prompt('На скільки оцінити його?');
 
-
-
-// if (num < 49) {
-//     console.log('Брехня')
-// } else if (num > 100) {
-//     console.log('Забагато!')
-// } else if (num === 50) {
-//     console.log('Перемога!')
-// }
-
-
-
-let result = '';
-
-for (let i = 0; i <= 5; i++) {
-    for (let j = 0; j < 5 - i; j++) {
-        result += " ";
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('Done!')
+    } else {
+        console.log('Error!');
+        i--;
     }
-    for (let j = 0; j < 2 * i + 1; j++) {
-        result += "*";
-    }
-    result += "\n";
 }
 
-console.log(result);
+
+if (personalMovieDB.count < 10) {
+    console.log('Переглянуто досить мало фільмів')
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log('Вам подобається дивитися фільми!')
+} else if (personalMovieDB.count > 30) {
+    console.log('Ви кіноман!')
+}
+
+
+console.log(personalMovieDB);
+
+
 
