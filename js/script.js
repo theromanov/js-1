@@ -1,48 +1,15 @@
 "use strict";
 
-// let number = 5; debugger;
-
-// function logNumber() {
-//     console.log(number); debugger;
-// }
-
-// number = 6;
-
-// logNumber(); debugger;
-
-// number = 8;
-
-// logNumber(); debugger;
-
-
-function createCounter() {
-    let counter = 0;
-
-    const myFunction = function () {
-        counter = counter + 1;
-        return counter;
-    }
-
-    return myFunction;
-}
-
-const increment = createCounter();
-const c1 = increment();
-const c2 = increment();
-const c3 = increment();
-
-console.log(c1, c2, c3);
-
-
-for (let i = 0; i < 9; i++) {
-    for (let j = 0; j < 9; j++) {
-        let num = 3;
-    }
-
-    console.log(num)
-}
-
-for (let i = 1; i < 5; i++) {
-    console.log(i + 1)
-}
-
+//Задачки
+// let x = 5; alert(++x);
+// [] + false - null + true ?
+// let y = 1; let x = y = 2; alert(x);
+// console.log([] + 1 + 2);
+// alert('1'[0]);
+// console.log(2 && 1 && null && 0 && undefined)
+// console.log(!!(1 && 2) === (1 && 2))
+// console.log(alert(null || 2 && 3 || 4))
+// const a = [1, 2, 3]; const b = [1, 2, 3]; console.log(a == a)
+// alert(+'Infinity')
+// console.log("Їжак" > "Яблуко")
+// console.log(0 || "" || 2 || undefined || true || false)
