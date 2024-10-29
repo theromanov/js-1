@@ -1,59 +1,48 @@
 "use strict";
 
-// To string
+// let number = 5; debugger;
 
-// 1)
-console.log(typeof (String(null)));
-console.log(typeof (String(true)));
+// function logNumber() {
+//     console.log(number); debugger;
+// }
 
-// Конкатенація.
+// number = 6;
 
-// 2)
-console.log(typeof (undefined + ''))
+// logNumber(); debugger;
 
-const num = 5;
+// number = 8;
 
-console.log("https://vk.com/catalog/" + num);
-
-
-const fontSize = 26 + 'px';
-
-console.log(fontSize);
-
-//To Number
-
-// 1)
-console.log(typeof (Number('4')));
-
-// 2)
-console.log(typeof (+'4'));
-
-// 3
-console.log(typeof (parseInt("15px", 10)));
-
-let answ = +prompt("hello world", "");
+// logNumber(); debugger;
 
 
-//To Boolean
+function createCounter() {
+    let counter = 0;
 
-// 1)
+    const myFunction = function () {
+        counter = counter + 1;
+        return counter;
+    }
 
-let switcher = null;
-
-if (switcher) {
-    console.log('Working...')
+    return myFunction;
 }
 
-switcher = 1;
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
 
-if (switcher) {
-    console.log('Working...')
+console.log(c1, c2, c3);
+
+
+for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
+        let num = 3;
+    }
+
+    console.log(num)
 }
 
-// 2)
+for (let i = 1; i < 5; i++) {
+    console.log(i + 1)
+}
 
-console.log(typeof (Boolean(5)))
-
-// 3)
-
-console.log(typeof (!!'4444'))
